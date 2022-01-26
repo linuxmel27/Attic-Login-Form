@@ -1,21 +1,75 @@
-body{
-	/* margin-left: 15%;
-	margin-top: 5%;
-	background: #D78376; */
-
-	border: 1px solid #000;
-	height: 800px;
+body{	
+	background-color: #f08257;
+	height: 700px;
+	
 }
 
 .main{
-	height: 60%;
+	height: 550px;
 	margin: 0 auto;
 	margin-top: 40px;
 	width: 85%;
-	background-color: white;
-	border: 2px solid;
-	background-color: rgba(0, 0, 0,.4);
-	border-radius: 4px;
-	padding: 20px;
+	background-color: #f7f4f3;
+	padding: 30px;
+	color: #000000;
+}
+
+.main .right{
+	width: 50%;	
+	float: right;
+}
+
+.main .left{
+	width: 50%;	
+	float: left;
+	
+	
+}
+/*Esto hace cambios a las cajas de texto*/
+.main .left input[type="text"]{
+	border-radius: 10px;
+	background: rgba(202, 197, 190, 0.993);
+	padding: 5px;
+	height: 20px;
+	display: block;
+	width: 80%;
+	margin-bottom: 9px;
+}
+
+/*Esto es para el menu de selecion multiple*/
+.main .left .do-list  select#com{
+	border-radius: 10px;
+	background:rgba(202, 197, 190, 0.993);
+	padding: 15px;
+	height: 20px;
+	display: block;
+	width: 82%;
+	
+}
+
+/*Esto es para el segundo menu de selecion multiple*/
+.main .left .country-list select#com{
+	border-radius: 10px;
+	background:rgba(202, 197, 190, 0.993);
+	padding: 15px;
+	height: 20px;
+	display: block;
+	width: 82%;
+}
+
+/*Esto es para estilizar los botones*/
+.main .left .buttons input[type=submit]{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	height: 30px;
+	background: rgb(14, 145, 21);
 	color: #fff;
+	font-size: 12px;
+	border-radius: 5px;
+	
+}
+
+/*Esta parte es para mover el boton de Save hacia la derecha*/
+.main .left .buttons input[type=submit id="save"]{
+	margin-left: 20px;
 }

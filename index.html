@@ -6,49 +6,68 @@
 		<title>Attic Login</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-			crossorigin="anonymous"></script>
 	</head>
 	<body>
-
+		<!-- En esta parte se inserta la imagen y se le dan las dimensiones -->
 		<div class="main">
 			<div class="right">
-				<form>
-					<label for="title">Attic </br></label>
-					<label for="title_2">Tell us a little about your store </br></label>
-					<label for="title_3">This is an inicial information of your business. </br> You can change it anytime</label>
-				</form>
+				<img src="img/donation.jpg" alt="" height="580px" width="596px">
 			</div>
-
+			<!-- En esta clase se hace el formulario a la izquierda con todos los textos de informarcion arriba-->
 			<div class="left">
 				<form action="">
+					<label for="title"><h3>Attic</h3> </label>
+					<label for="title_2"><h4>Tell us a little about your store</h4></label>
+					<label for="title_3">This is an inicial information of your business. <br/> You can change it anytime<br/></label>
+
 					<div class="row">
-						<div class="col-md-12">
-							<label for="name">Give me your username: </label><br/>
-							<input type="text" placeholder="Username">
+						<div class="all">							
+							<input type="text" placeholder="Storename">
 						</div>
-						<div class="col-md-12">
-							<label for="name">Write your password: </label><br/>
-							<input type="password" placeholder="Password">
+						<!-- Este es un menu de selecion drop down -->
+						<div class="do-list">
+							<select name="company" id="com" placeholder="Company">
+								<option value="Toysfun">Toysfun</option>
+								<option value="Sunnyside">Sunnyside</option>
+								<option value="Manytoys">Manytoys</option>
+								<option value="Playtoys">Playtoys</option>
+							 </select>
 						</div>
+						<!--Aca se inserta un checkbox -->
+						<div>
+							<input type="checkbox">
+							<label for="title"> This store is registered business</label>
+						</div>
+						<!--Aca van toda la mayor parte de cajas de texto del formulario-->
+						<div class="many-items">
+							<input type="text" placeholder="Company legal name">
+							<input type="text" placeholder="VAT EU Number">
+							<input type="text" placeholder="Adress">
+							<input type="text" placeholder="ZIP code">
+							<input type="text" placeholder="City">
+						</div>
+
+						<!-- Este es el segundo menu drop down del formulario-->
+						<div class="country-list">
+							<select name="country" id="com" placeholder="country">
+								<option value="Country" ></option>
+								<option value="Guatemala">Guatemala</option>
+								<option value="Honduras">Honduras</option>
+								<option value="Nicaragua">Nicaragua</option>
+								<option value="Panama">Panama</option>
+							 </select>
+						</div>
+						<!--En esta ultima parte van los botones al final del formulario-->
+						<div class="buttons">
+							<input type="submit" id="back" value="< Go back">
+							<input type="submit" id="save" value="Save and continue">
+						</div>
+
 					</div>
+
 				</form>
 			</div>
-
 		</div>
-
 	</body>
 
-	<footer>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-			integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-			crossorigin="anonymous"></script>
-
-	</footer>
 </html>
